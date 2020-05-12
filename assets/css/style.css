@@ -1,0 +1,111 @@
+header {
+    background: #191919;
+    height: 130px;
+}
+header h1 {
+    padding-top: 10px;
+    color: #e5e5e5;
+    font-size: 40px;
+}
+header p {
+    color : #e5e5e5;
+    font-size: 17px;
+    padding-top: 5px;
+}
+#sectionPrincipal {
+    background-color: #000000;
+}
+.elementImg {
+    height: 700px;
+}
+.elementDesc {
+    height: 700px;
+}
+.elementImg img{
+    margin-top: 100px;
+}
+.elementDesc h2 {
+    color: #ffffff;
+    margin-top: 70px;
+    font-size: 70px;
+    padding-left: 30px;
+}
+.elementDesc p:first-of-type {
+    margin-top: 50px;
+}
+.elementDesc p {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+}
+footer {
+    height: 100px;
+    background-color: #191919;
+}
+footer p {
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+}
+/*-----------------------------mobile------------------*/
+@media screen and (max-width: 1370px) {
+    .elementImg {
+        height: 300px;
+    }
+    .elementDesc {
+        height: auto;
+    }
+    .elementImg img{
+        margin-top: 50px;
+        width: 250px;
+    }
+    .elementDesc h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 70px;
+    }
+    .elementDesc p {
+        text-align: center;
+        font-size: 13px;
+    }
+}
+/*-----------------------------reveal------------------*/
+.reveal {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 3s;
+}
+/*-----------------------------fleche------------------*/
+#retourTop{
+    border-radius:10px;
+    padding:10px;
+    font-size:55px;
+    text-align:center;
+    color:#ffffff;
+    background:rgba(0, 0, 0, 0.25);
+    position:fixed;
+    left:40px;
+    opacity:1;
+    /* sans text-decoration : none, le symbole est souligné*/
+    text-decoration: none; 
+  }
+  /* :before sert a ajouter du contenu*/ 
+  #retourTop:before{ 
+    /*le contenu est un symbole dont le code css est le \2B06*/
+    content: "	\2191"; 
+  }
+  #retourTop:hover{
+    background:rgb(94, 94, 94, 1);
+  } 
+  .invisible{
+    opacity:0;
+  }
+  .visible{
+    bottom: 30px;
+    opacity:1;
+  }

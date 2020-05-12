@@ -50,6 +50,9 @@ footer p {
 }
 /*-----------------------------mobile------------------*/
 @media screen and (max-width: 1370px) {
+    header p {
+        font-size: 14px;
+    }
     .elementImg {
         height: 300px;
     }
